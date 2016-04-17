@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Starting insulin</title>
+    <script type="text/javascript" src="startinsulin.js"></script>
+</head>
+<body>
+    <h1>Starting insulin in insulin naive hyperglycemic patient</h1>
+    <p>If resuming insulin started as outpatient, use previous insulin dosing as a starting point.  If the patient is a
+        reliable historian and A1c is <8%, consider using the outpatient insulin doses without adjustment.
+        Consider a decrease from this dose if current glucoses are on the lower side.</p>
+    <p>If glucoses are markedly hyperglycemic and acute control is needed, consider using an insulin drip -
+        EPIC order set (4769).</p>
+    <p>If glucoses are hyperglycemic, but control can be obtained over a longer period of time, use this tool to guide
+        insulin initiation.</p>
+    <p>EPIC order set 5172 contains many subcutanous insulin ordering assets.</p><br><br>
+
+    <form name="startform" action="" method="get">
+        Patient weight in Kg: <input type="number" name="weight" id="weight" min="0" max="500" step=".1"><br>
+        <input type="button" name="wtbox" value="Calculate" onclick="calculatestart(this.form)">
+    </form>
+
+</body>
+</html>

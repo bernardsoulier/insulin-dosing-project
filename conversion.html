@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Converting from IV insulin gtt to subcutaneous basal/bolus insulin</title>
+    <!-- form1 will be managed by script1.js HTML is case insensitive, JS is sensitive -->
+</head>
+<body>
+    <h2>Enter insulin gtt rate in respective change times:</h2>
+    <p>Enter starting rate at approprate time and 88 at current time (end time), enter any rate changes at the correct hours,
+    and leave everything else blank.</p>
+    <p>The application will populate the interval hourly rates.</p>
+    <p>Remember to enter 88 at the end time.</p>
+    <form id="form1" name="form1" action="" method="put">
+        0000: <input type="number" name="t" id="t0000" min="0" max="100" step=".1"><br>
+        0100: <input type="number" name="t" id="t0100" min="0" max="100" step=".1"><br>
+        0200: <input type="number" name="t" id="t0200" min="0" max="100" step=".1"><br>
+        0300: <input type="number" name="t" id="t0300" min="0" max="100" step=".1"><br>
+        0400: <input type="number" name="t" id="t0400" min="0" max="100" step=".1"><br>
+        0500: <input type="number" name="t" id="t0500" min="0" max="100" step=".1"><br>
+        0600: <input type="number" name="t" id="t0600" min="0" max="100" step=".1"><br>
+        0700: <input type="number" name="t" id="t0700" min="0" max="100" step=".1"><br>
+        0800: <input type="number" name="t" id="t0800" min="0" max="100" step=".1"><br>
+        0900: <input type="number" name="t" id="t0900" min="0" max="100" step=".1"><br>
+        1000: <input type="number" name="t" id="t1000" min="0" max="100" step=".1"><br>
+        1100: <input type="number" name="t" id="t1100" min="0" max="100" step=".1"><br>
+        1200: <input type="number" name="t" id="t1200" min="0" max="100" step=".1"><br>
+        1300: <input type="number" name="t" id="t1300" min="0" max="100" step=".1"><br>
+        1400: <input type="number" name="t" id="t1400" min="0" max="100" step=".1"><br>
+        1500: <input type="number" name="t" id="t1500" min="0" max="100" step=".1"><br>
+        1600: <input type="number" name="t" id="t1600" min="0" max="100" step=".1"><br>
+        1700: <input type="number" name="t" id="t1700" min="0" max="100" step=".1"><br>
+        1800: <input type="number" name="t" id="t1800" min="0" max="100" step=".1"><br>
+        1900: <input type="number" name="t" id="t1900" min="0" max="100" step=".1"><br>
+        2000: <input type="number" name="t" id="t2000" min="0" max="100" step=".1"><br>
+        2100: <input type="number" name="t" id="t2100" min="0" max="100" step=".1"><br>
+        2200: <input type="number" name="t" id="t2200" min="0" max="100" step=".1"><br>
+        2300: <input type="number" name="t" id="t2300" min="0" max="100" step=".1"><br>
+        0000 (day 2): <input type="number" name="t" id="t2400" min="0" max="100" step=".1"><br>
+        0100: <input type="number" name="t" id="t2500" min="0" max="100" step=".1"><br>
+        0200: <input type="number" name="t" id="t2600" min="0" max="100" step=".1"><br>
+        0300: <input type="number" name="t" id="t2700" min="0" max="100" step=".1"><br>
+        0400: <input type="number" name="t" id="t2800" min="0" max="100" step=".1"><br>
+        0500: <input type="number" name="t" id="t2900" min="0" max="100" step=".1"><br>
+        0600: <input type="number" name="t" id="t3000" min="0" max="100" step=".1"><br>
+        0700: <input type="number" name="t" id="t3100" min="0" max="100" step=".1"><br>
+        0800: <input type="number" name="t" id="t3200" min="0" max="100" step=".1"><br>
+        0900: <input type="number" name="t" id="t3300" min="0" max="100" step=".1"><br>
+        1000: <input type="number" name="t" id="t3400" min="0" max="100" step=".1"><br>
+        1100: <input type="number" name="t" id="t3500" min="0" max="100" step=".1"><br>
+        1200: <input type="number" name="t" id="t3600" min="0" max="100" step=".1"><br>
+        1300: <input type="number" name="t" id="t3700" min="0" max="100" step=".1"><br>
+        1400: <input type="number" name="t" id="t3800" min="0" max="100" step=".1"><br>
+        1500: <input type="number" name="t" id="t3900" min="0" max="100" step=".1"><br>
+        1600: <input type="number" name="t" id="t4000" min="0" max="100" step=".1"><br>
+        1700: <input type="number" name="t" id="t4100" min="0" max="100" step=".1"><br>
+        1800: <input type="number" name="t" id="t4200" min="0" max="100" step=".1"><br>
+        1900: <input type="number" name="t" id="t4300" min="0" max="100" step=".1"><br>
+        2000: <input type="number" name="t" id="t4400" min="0" max="100" step=".1"><br>
+        2100: <input type="number" name="t" id="t4500" min="0" max="100" step=".1"><br>
+        2200: <input type="number" name="t" id="t4600" min="0" max="100" step=".1"><br>
+        2300: <input type="number" name="t" id="t4700" min="0" max="100" step=".1"><br>
+
+        <input type="button" id="dosomething" value="Calculate Total" />
+    </form>
+    <script src="js/jquery-2.2.2.min.js"></script>
+    <script type="text/javascript" src="script1.js"></script>
+</body>
+</html>
+
+<!--
+http://stackoverflow.com/questions/3234205/html-form-input-tag-name-element-array-with-javascript
+http://www.javaworld.com/article/2077176/scripting-jvm-languages/using-javascript-and-forms.html
+-->

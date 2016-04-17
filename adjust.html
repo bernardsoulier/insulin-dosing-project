@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Adjusting insulin dosing for target glucose 140-180 (inpatient target)</title>
+    <script type="text/javascript" src="adjustinsulin.js"></script>
+</head>
+<body>
+    <h1>Adjusting insulin</h1><br><br>
+    <p>insulin dosing adjustments based on a 10 or 20% increment will be given.  Enter current total daily insulin.</p>
+    <p>Sum should include the total of both the basal and all individual prandial insulin doses.</p>
+    <form>
+        Total insulin sum over past 24 hours: <input type="number" name="tdi" id="totalinsulin" min="0" max="500" step=".1"><br>
+        <input type="button" name="totalinsulin" value="Calculate" onclick="calculateadjust(this.form)">
+    </form>
+</body>
+</html>
